@@ -15,5 +15,11 @@ null : değer içermeyen bilgi
 $urunAdi= "Iphone 15";
 echo $urunAdi. ':' .gettype($urunAdi);
 
+$a = 20;
+echo gettype($a);   //veri türü int geldi ama double ela almak istersem
+
+
+$a = (double)20;
+echo gettype($a);  //double olarak karşıma çıkar.
 
 ?>
