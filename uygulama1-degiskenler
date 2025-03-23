@@ -1,0 +1,92 @@
+<?php
+    $kurs1_baslik="C# Kursu";
+    $kurs1_altBaslik = "Sıfırdan ileri seviye uygulamalarla C#";
+    $kurs1_resim = "pic/images (1).png "; 
+    $kurs1_yayinTarihi = "01.03.2023";
+    $kurs1_yorumSayisi= "100";
+    $kurs1_begeniSayisi ="300";
+
+    $kurs2_baslik="Node.js Kursu";
+    $kurs2_altBaslik = "Sıfırdan ileri seviye Node.js";
+    $kurs2_resim = "pic/71302-express.js-chrome-javascript-system-node.js-v8-runtime_1687631713.png";  
+    $kurs2_yayinTarihi ="01.01.2023";
+    $kurs2_yorumSayisi= "100";
+    $kurs2_begeniSayisi ="300";
+
+    $kurs3_baslik="PHP Kursu";
+    $kurs3_altBaslik = "Sıfırdan ileri seviye PHP";
+    $kurs3_resim = "pic/images.png";  
+    $kurs3_yayinTarihi ="01.01.2023";
+    $kurs3_yorumSayisi= "100";
+    $kurs3_begeniSayisi ="300";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    <title>Kurs Listesi</title>
+</head>
+<body>
+
+<div class="container my-3"> 
+    <!-- C# Kursu -->
+    <div class="card mb-3">
+        <div class="row">
+            <div class="col-3">
+                <img src="<?php echo $kurs1_resim; ?>" alt="C#" class="img-fluid">
+            </div>
+            <div class="col-9">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $kurs1_baslik; ?></h5>
+                    <p class="card-text"><?php echo $kurs1_altBaslik; ?></p>
+                    <p>
+                        <span class= "badge rounded-pill text-bg-primary">
+                            Beğeni: <?php echo $kurs1_begeniSayisi; ?>
+                        </span>
+                        <span class= "badge rounded-pill text-bg-danger">
+                            Yorum: <?php echo $kurs1_yorumSayisi; ?>
+                        </span>
+
+
+                    </p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Node.js Kursu -->
+    <div class="card mb-3">
+        <div class="row">
+            <div class="col-3">
+                <img src="<?php echo $kurs2_resim; ?>" alt="Node.js" class="img-fluid">
+            </div>
+            <div class="col-9">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $kurs2_baslik; ?></h5>
+                    <p class="card-text"><?php echo $kurs2_altBaslik; ?></p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- PHP Kursu -->
+    <div class="card mb-3">
+        <div class="row">
+            <div class="col-3">
+                <img src="<?php echo $kurs3_resim; ?>" alt="PHP" class="img-fluid">
+            </div>
+            <div class="col-9">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $kurs3_baslik; ?></h5>
+                    <p class="card-text"><?php echo $kurs3_altBaslik; ?></p>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
