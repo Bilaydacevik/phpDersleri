@@ -24,6 +24,6 @@ echo gettype($a);  //double olarak karşıma çıkar.
 
 $a = (int)false;
 echo gettype($a); 
-echo $a;  // eğer boolean ifadelerde hem true hem false için 0 ya 1'i kesin döndürmesini istersen, int diye belirtmek uygun olur.
+echo $a;  // eğer boolean ifadelerde hem true hem false için 0 ya 1'i kesin döndürmesini istersen, int diye belirtmek uygun olur. Aksi taktirde true karşılığı 1 yazar ama false karşılığı olarak 0 yazdırmaz.
 
 ?>
