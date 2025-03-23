@@ -1,0 +1,14 @@
+<?php
+$maasAli = 2000;
+$maasMehmet = 1600;
+$maasVolkan = 2500;
+$vergiOrani1= 0.27;
+$vergiOrani2= 0.35;
+
+echo  $maasAli - ($maasAli * $vergiOrani1); //ali maaşı
+echo "<br>";
+echo $maasMehmet-($maasMehmet * $vergiOrani1); // mehmet maaş
+echo "<br>";
+echo $maasVolkan -($maasVolkan * $vergiOrani2); //volkan maaş
+echo "<br>";
+?>
